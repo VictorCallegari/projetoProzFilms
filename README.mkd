@@ -1,0 +1,23 @@
+# projetoProzFilms
+
+## Projeto Equipe 5
+
+### Turma 7 - PROZ + AWS + TALENTO CLOUD
+
+Este é o README do nosso projeto, onde vamos compartilhar informações sobre o nosso desenvolvimento no projeto de uma site de Streaming de Filmes e séries.
+
+## Desenvolvimento
+
+### Gráfico de Desenvolvimento de linguagens
+Nestes gráficos, você pode ver meu progresso ao longo do tempo em relação ao nosso aprendizado.
+
+
+### Project
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=VictorCallegari&repo=projetoProzFilms&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
+
+
+
+- **Sprint 1: **
+
+Desenvolvimento de 5 layouts do site, Escolhemos os layouts de...

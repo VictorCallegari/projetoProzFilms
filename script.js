@@ -1,0 +1,1 @@
+/*Área de desenvolvimento do JavavaScript*/
