@@ -1,110 +1,125 @@
+/* Defina a cor de fundo do corpo */
 body {
-	background-color: #0c94ac;
-  }
+    background-color: #0c94ac;
+}
 
-  
-  /* Estilize o cabeçalho */
-  .area-cabecalho {
-	background-color: #045474;
-	display: flex;
-	justify-content: space-between; /* Centralize horizontalmente e crie espaço entre elementos */
-	align-items: center; /* Centralize verticalmente */
-	height: 100px;
-	padding: 0 20px; /* Adicione preenchimento aos lados para espaçamento */
-	border: groove 5px #329dc7;
-  }
-  
-  .imagem-logo {
-	height: 80px;
-	width: auto;
-  }
-  
-  .perfil-user img {
-	width: 80px; /* Reduzi o tamanho da imagem do perfil */
-	height: auto;
-	border-radius: 50%; /* Crie uma borda circular */
-	margin-right: 35px; /* Adicione espaço entre a imagem e o cabeçalho */
-  }
-  
-  /* Estilize o menu */
-  .area-menu {
-	background-color: #0c94ac;
-	padding: 15px 0; /* Aumente o preenchimento vertical */
-	border: groove 5px #0c94ac;
-  }
-  
-  .area-menu ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	text-align: center;
-  }
-  
-  .area-menu li {
-	display: inline;
-  }
-  
-  .area-menu a {
-	text-decoration: none;
-	color: #fff;
-	padding: 10px;
-	border: 1px solid #fff;
-  }
-  
-  .area-menu a:hover {
-	background-color: #f1af14;
+/* Estilize o cabeçalho */
+.area-cabecalho {
+    background-color: #045474;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 20px;
+    border: 5px groove #329dc7;
+}
+
+.imagem-logo {
+    height: 80px;
+    width: auto;
+}
+
+.perfil-user img {
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 35px;
+}
+
+/* Estilize o menu */
+.area-menu {
+    background-color: #0c94ac;
+    padding: 15px 0;
+    border: 5px groove #0c94ac;
+}
+
+.area-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.area-menu li {
+    display: inline;
+    margin: 0 10px; /* Adicione espaçamento entre os itens do menu */
+}
+
+.area-menu a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #fff;
+}
+
+.area-menu a:hover {
+    background-color: #f1af14;
+    color: #042f41;
+}
+
+/* Estilize a seção de sugestão de filme */
+#indicacao-filme {
+    float: left;
+    width: 40%;
+    max-width: 100%;
+    height: 100vh;
+    padding: 10px;
+    background-color: #0c94ac;
+    display: flex; /* Correção para a exibição flex */
+    flex-direction: column; /* Alinhar o texto e a imagem verticalmente */
+    align-items: center;
+}
+
+#indicacao-filme h1,
+#indicacao-filme .filme-indicado img {
+    margin: 0;
+}
+
+#indicacao-filme h1 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px; /* Adicione espaço abaixo do título */
+}
+
+#indicacao-filme .filme-indicado img {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Estilize a seção de lista de sugestões */
+#lista-sugestoes h1 {
+    color: #fff;
+    text-align: left;
+}
+
+#lista-sugestoes p {
+    color: #fff;
+    text-align: left;
+    margin-right: 10%;
+}
+
+.btn-play {
+	background-color: #042f41;
+    color: #f1af14;
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 50%; 
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.3s, background-color 0.3s;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn-play:hover {
+    transform: rotate(360deg);
 	color: #042f41;
-  }
+	background-color: #f1af14;     
+}
 
-  
-  /* Estilize a seção de sugestão de filme */
-  #indicacao-filme {
-	float: left;
-	width: 30%; /* 30% da tela para a seção de sugestão de filme */
-	max-width: 100%;
-	height: 100vh;
-	padding: 20px; /* Adicione preenchimento para espaçamento interno */
-	background-color: #0c94ac;
-  }
-  
-  #indicacao-filme {
-	display: flex;
-	justify-content: center;
-  }
-  
-  #indicacao-filme h1,
-  #indicacao-filme .filme-indicado img {
-	margin: 0 auto;
-  }
-  
-  #indicacao-filme h1 {
-	text-align: center;
-	vertical-align: middle;
-	position: relative;
-	top: -20px;
-	z-index: 1;
-	left: 50%;
-	transform: translateX(-58%);
-	margin-right: 5px;
-	color: #fff;
-  }
-  
-  #indicacao-filme .filme-indicado img {
-	display: block;
-	margin-top: 20px;
-  }
-  
-  
-  #lista-sugestoes h1 {
-	color: #fff;
-	text-align: left;
-	
-  }
-  #lista-sugestoes p {
-	color: #fff;
-	text-align: left;
-	margin-right: 10%;
-	
-  }
 
 
