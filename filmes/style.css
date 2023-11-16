@@ -79,113 +79,103 @@ ul{
   display: flex;
 }
 
-  
-  /* Estilização da seção de sugestão de filme */
+.iframe{
+  margin-top: 20px;
+}
+
+.iframe iframe{
+  width: 580px;
+   height: 315px 
+}
+
 #indicacao-filme {
-	width: 40%; /* 30% da tela para a seção de sugestão de filme */
-	max-width: 100%;
-	height: 100vh;
-	padding: 20px; /* preenchimento para espaçamento interno */
-}
-  
-#indicacao-filme h1 {
-	color: #fff;
-	text-align: center;
-}
-  
-#indicacao-filme .filme-indicado img {
-	width: 100%;
-	border: 1px solid #ffff;
-}
-
-#indicacao-filme .filme-indicado img:hover {
-	scale: 1.01;
-	border: 2px solid #f8c245;
-}
-
-  
-  /* Estilização dos elementos "box-film" */
-.box-film {
-	width: 150px; /* Tamanho dos elementos de acordo com o design desejado */
-	height: 200px;
-	margin-right: 20px; /* Espaço à direita dos elementos para separação */
-	display: inline-block; /* Coloque os elementos em linha reta */
-	padding: 10px;
-}
-
-.box-film img{
-	width: 180px;
-	border: 1px solid #ffff;
-}
-
-.box-film img:hover{
-	scale: 1.01;
-	border: 2px solid #f8c245;
-}
-  
-  /* Estilização da seção de lista de sugestões */
-#lista-sugestoes {
-	width: 60%; /* 60% da tela para a seção de lista de sugestões */
-	padding: 20px;
-}
-
-#carousel {
-  display: flex; /* Exibe os elementos em uma única linha horizontal */
-  overflow-x: hidden; /* Adiciona uma barra de rolagem horizontal se necessário */
-  scroll-behavior: smooth; 
-}
-
-#carousel2 {
-  display: flex; /* Exibe os elementos em uma única linha horizontal */
-  overflow-x: hidden; /* Adiciona uma barra de rolagem horizontal se necessário */
-  scroll-behavior: smooth; 
-}
-
-.container-filmes{
-	height: 310px;
-	overflow-x: hidden;
-}
-
-  
-#lista-sugestoes h1 {
-	color: #fff;
-}
-
-/* Estilização Scrollbar */
-.header-films{
+  position: relative;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;  
+  justify-content: center;
+  width: 40%; 
+  max-width: 100%;
+  height: 100vh;
+  padding: 20px; /* preenchimento para espaçamento interno */
 }
 
-.btn-arrow{
-  height: 40px;
-  width: auto;
-  background-color: transparent;
-  border: none;
-}
-
-.btn-arrow:hover{
+#indicacao-filme img {
   cursor: pointer;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.719);
+  height: 600px;
+  width: auto;
+}
+
+#sinopse{
+  display: none;
+}
+
+#sinopse-filmes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur( 13.5px );
   -webkit-backdrop-filter: blur( 13.5px );
   border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
-.title-btn{
+#sinopse-filmes h1 {
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  text-align: justify;
+}
+
+#sinopse-filmes p {
+  padding: 20px;
+  font-size: 20px;
+  color: #0c0a08;
+  text-align: justify;
+}
+
+#button{
   display: flex;
-  margin-top: 50;
+  align-items: center;
+  gap: 30px;
 }
 
-.arrow-btn {
-  width: 30px;
-  height: auto;
+.btn-play {
+  background-color: #042f41;
+  color: #f1af14;
+  width: 80px;
+  height: 80px;
+  border: none;
+  border-radius: 50%; 
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.3s, background-color 0.3s;
 }
 
-.btn-left{
-  transform: rotate(180deg);
+.btn-play:hover {
+  transform: rotate(360deg);
+  color: #042f41;
+  background-color: #f1af14;     
 }
+
+.btn-add{
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%; 
+  cursor: pointer;
+}
+
+.btn-add img{
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+}
+
 
 /* Estilização do Footer */
 
@@ -229,9 +219,6 @@ ul{
 .logos-link img{
   width: 30px;
   height: auto;
-}
-
-.logos-link img{
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.719);
   backdrop-filter: blur( 13.5px );
   -webkit-backdrop-filter: blur( 13.5px );

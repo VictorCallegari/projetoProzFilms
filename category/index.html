@@ -11,7 +11,7 @@
 <body>
     <header class="area-cabecalho">
         <div>
-            <a id="area-logo" href="">
+            <a id="area-logo" href="../home/index.html">
                 <img class="imagem-logo" src="./imagens/logo_transparent.png" alt="logomarca da prozFilms">
             </a>
         </div>        
@@ -21,7 +21,7 @@
                     <a href="#">MINHA LISTA</a>
                 </li>
                 <li>
-                    <a href="../category/index.html">CATEGORIA</a>
+                    <a href="#">CATEGORIA</a>
                 </li>
                 <li>
                     <a href="#">CONFIGURAÇÕES</a>
@@ -39,23 +39,40 @@
         </div>
     </header>
 
-    <main>
+    <aside id="area-aside">
+        <div class="texto-categorias">
+            <h1>Categorias:</h1>
+        </div>
+        <div>
+            <nav class="area-menu2"><!-- Menu -->
+                <ul>
+                    <li>
+                        <a href="#acao">Filmes de Ação</a>
+                    </li>
+                    <li>
+                        <a href="#animacao">Filmes de Animação</a>
+                    </li>
+                    <li>
+                        <a href="#comedia">Filmes de Comedia</a>
+                    </li>
+                    <li>
+                        <a href="#drama">Filmes de Drama</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>        
+
+    </aside>         
+
+    <main>      
+        
         <section class="container">
-
-            <section id="indicacao-filme">
-                <h1>SUGESTÃO DE FILME</h1>
-                <div class="filme-indicado">
-                    <a href="../filmes/index.html">
-                    <img src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2/o5tWAiHfxEvu2z1qkJKU4gW1uPY.jpg" alt="">
-                    </a>
-                </div>             
-            </section>
-
+          
             <section id="lista-sugestoes">
                 <div class="blocos-filmes">
                     <section class="header-films">
                         <div class="title-films">
-                            <h1>Continue Assistindo</h1>
+                            <h1 id="acao">Ação</h1>
                         </div>
                         <div class="title-btn">
                             <button class="btn-arrow btn-left" onclick="clicLeftScroll()">
@@ -68,7 +85,7 @@
 
                     </section>
                    
-                    <div class="container-filmes" id="carousel">
+                    <div class="container-filmes carousel" id="carousel">
                         <div class="box-film" >
                             <a href="">
                                 <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/y5sdkgO4IJMTnkjh9PG7kREPWrP.jpg" alt="">
@@ -101,7 +118,7 @@
                 <div class="blocos-filmes">
                     <section class="header-films">
                         <div class="title-films">
-                            <h1>Novos episódios da sua lista</h1>
+                            <h1 id="animacao">Animação</h1>
                         </div>
                         <div class="title-btn">
                             <button class="btn-arrow btn-left" onclick="clicLeftScroll2()">
@@ -113,7 +130,7 @@
                         </div>
 
                     </section>
-                    <div class="container-filmes" id="carousel2">
+                    <div class="container-filmes carousel" id="carousel2">
                         <div class="box-film" >
                             <a href="">
                                 <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ukR0MkCQE6IylzBPd61txJi1L3E.jpg" alt="">
@@ -140,6 +157,98 @@
                             </a>
                         </div>
                     </div>    
+                </div>
+
+                <div class="blocos-filmes">
+                    <section class="header-films">
+                        <div class="title-films">
+                            <h1 id="comedia">Comédia</h1>
+                        </div>
+                        <div class="title-btn">
+                            <button class="btn-arrow btn-left" onclick="clicLeftScroll3()">
+                                <img class="arrow-btn" src="./imagens/right-arrow-icon-27.png" alt="rigth arrow scrollbar">
+                            </button>
+                            <button class="btn-arrow" onclick="clicRigthScroll3()">
+                                <img class="arrow-btn" src="./imagens/right-arrow-icon-27.png" alt="rigth arrow scrollbar">
+                            </button>
+                        </div>
+
+                    </section>
+                    
+                    <div class="container-filmes carousel" id="carousel3">
+                        <div class="box-film" >
+                            <a href="">
+                                <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/y5sdkgO4IJMTnkjh9PG7kREPWrP.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="box-film">
+                            <a href="">
+                                <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/klGKGITBYYyTiHrph1VDSgGULOR.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="box-film">
+                            <a href="">
+                                <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qXChf7MFL36BgoLkiB3BzXiwW82.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="box-film">
+                            <a href="">
+                                <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/uldNFFKNXNvwss0MIZErMSFkBJZ.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="box-film">
+                            <a href="">
+                                <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ysRGRuG4ccFzugiKZNXcx44wSnY.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>    
+                    
+                </div>
+
+                <div class="blocos-filmes">
+                    <section class="header-films">
+                        <div class="title-films">
+                            <h1 id="drama">Drama</h1>
+                        </div>
+                        <div class="title-btn">
+                            <button class="btn-arrow btn-left" onclick="clicLeftScroll4()">
+                                <img class="arrow-btn" src="./imagens/right-arrow-icon-27.png" alt="rigth arrow scrollbar">
+                            </button>
+                            <button class="btn-arrow" onclick="clicRigthScroll4()">
+                                <img class="arrow-btn" src="./imagens/right-arrow-icon-27.png" alt="rigth arrow scrollbar">
+                            </button>
+                        </div>
+
+                    </section>
+                   
+                    <div class="container-filmes carousel" id="carousel4">
+                        <div class="box-film" >
+                            <a href="">
+                                <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/y5sdkgO4IJMTnkjh9PG7kREPWrP.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="box-film">
+                            <a href="">
+                                <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/klGKGITBYYyTiHrph1VDSgGULOR.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="box-film">
+                            <a href="">
+                                <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qXChf7MFL36BgoLkiB3BzXiwW82.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="box-film">
+                            <a href="">
+                                <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/uldNFFKNXNvwss0MIZErMSFkBJZ.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="box-film">
+                            <a href="">
+                                <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ysRGRuG4ccFzugiKZNXcx44wSnY.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>    
+                    
                 </div>
             </section>
         </section>

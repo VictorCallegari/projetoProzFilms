@@ -72,43 +72,71 @@ ul{
 	color: #042f41;
 }
 
+/*Aside */
+aside {
+  position: absolute;
+  left: 0;
+  background-color: #1c1c24;
+  height: 100%;
+  width: 20%;
+  border: 5px groove #f1af14;
+}
+
+.texto-categorias{
+  text-align: center;
+  color: #f8c245;
+}
+
+.area-menu2 {
+  border-radius: 30px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.151);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 13.5px );
+  -webkit-backdrop-filter: blur( 13.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+  
+.area-menu2 ul {
+	list-style-type: none;
+	padding: 0;
+	text-align: center;
+}
+
+.area-menu2 li{
+  margin-top: 20px;
+}
+  
+  
+.area-menu2 a {
+	text-decoration: none;
+  font-size: 20px;
+	color: #fff;
+}
+  
+.area-menu2 a:hover {
+	background-color: #f1af14;
+	color: #042f41;
+}
 
 /* Organização da Área main */
 
+main{
+  margin-left: 25%;
+  height: 100%;
+}
+
 .container{
-  display: flex;
-}
-
-  
-  /* Estilização da seção de sugestão de filme */
-#indicacao-filme {
-	width: 40%; /* 30% da tela para a seção de sugestão de filme */
-	max-width: 100%;
-	height: 100vh;
-	padding: 20px; /* preenchimento para espaçamento interno */
+  height: 600px;
+  overflow-y: scroll;
 }
   
-#indicacao-filme h1 {
-	color: #fff;
-	text-align: center;
-}
-  
-#indicacao-filme .filme-indicado img {
-	width: 100%;
-	border: 1px solid #ffff;
-}
-
-#indicacao-filme .filme-indicado img:hover {
-	scale: 1.01;
-	border: 2px solid #f8c245;
-}
-
   
   /* Estilização dos elementos "box-film" */
 .box-film {
 	width: 150px; /* Tamanho dos elementos de acordo com o design desejado */
-	height: 200px;
-	margin-right: 20px; /* Espaço à direita dos elementos para separação */
+	margin-right: 25px; /* Espaço à direita dos elementos para separação */
 	display: inline-block; /* Coloque os elementos em linha reta */
 	padding: 10px;
 }
@@ -125,17 +153,11 @@ ul{
   
   /* Estilização da seção de lista de sugestões */
 #lista-sugestoes {
-	width: 60%; /* 60% da tela para a seção de lista de sugestões */
+	width: 95%; /* 80% da tela para a seção de lista de sugestões */
 	padding: 20px;
 }
 
-#carousel {
-  display: flex; /* Exibe os elementos em uma única linha horizontal */
-  overflow-x: hidden; /* Adiciona uma barra de rolagem horizontal se necessário */
-  scroll-behavior: smooth; 
-}
-
-#carousel2 {
+.carousel {
   display: flex; /* Exibe os elementos em uma única linha horizontal */
   overflow-x: hidden; /* Adiciona uma barra de rolagem horizontal se necessário */
   scroll-behavior: smooth; 

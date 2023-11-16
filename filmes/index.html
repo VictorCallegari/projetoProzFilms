@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProzFilms - HOME</title>
-    <link rel="stylesheet" href="filmes.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> <!-- Normalize -->
+    <script src="./script.js" defer></script>
 </head>
 <body>
     <header class="area-cabecalho">
         <div>
             <a id="area-logo" href="../home/index.html">
-                <img class="imagem-logo" src="../home/imagens/twitter_header_photo_1.png" alt="logomarca da ProzFilms">
+                <img class="imagem-logo" src="./imagens/logo_transparent.png" alt="logomarca da prozFilms">
             </a>
-        </div>
-        <nav class="area-menu">
+        </div>        
+        <nav class="area-menu"><!-- Menu -->
             <ul>
                 <li>
-                    <a href="#">MINHA LISTA</a>
+                    <a href="../home/index.html">MINHA LISTA</a>
                 </li>
                 <li>
-                    <a href="#">CATEGORIA</a>
+                    <a href="../category/index.html">CATEGORIA</a>
                 </li>
                 <li>
                     <a href="#">CONFIGURAÇÕES</a>
@@ -30,42 +30,122 @@
                     <a href="#">SOBRE NÓS</a>
                 </li>
             </ul>
-        </nav>
+        </nav><!-- Final do Menu -->
+        
         <div class="perfil-user">
             <a href="../telacheckout/index.html">
-                <img src="../home/imagens/perfil-id.jpg" alt="perfil user">
+                <img src="./imagens/perfil-id.jpg" alt="perfil user">
             </a>
         </div>
     </header>
 
     <main>
-        <section id="indicacao-filme">
-            <h1>Nome do Filme</h1>
-            <div class="filme-indicado">
-                <a href="../filmes/index.html">
-                    <img src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2/o5tWAiHfxEvu2z1qkJKU4gW1uPY.jpg" alt="Capa do Filme">
-                </a>
-            </div>
-        </section>
+        <section class="container">
 
-        <section id="lista-sugestoes">
-            <h1>Sinopse</h1>
-            <section class="sinopse-filmes">
-                <p>
-                    Em um mundo pós-apocalíptico, um grupo de sobreviventes luta para sobreviver em uma terra devastada por um vírus mortal. Eles precisam encontrar um novo lugar para viver, mas o vírus está se espalhando rapidamente e eles estão ficando sem tempo.
+            <section id="indicacao-filme">
 
-                    A história segue o personagem principal, um homem chamado John, que está determinado a encontrar um lugar seguro para sua família. Ele se junta a um grupo de outros sobreviventes e eles embarcam em uma jornada perigosa através do deserto.
+                <div class="filme-indicado" id="filme-indicado">
 
-                    Ao longo do caminho, eles encontram outros grupos de sobreviventes, alguns dos quais são amigáveis e outros que são hostis. Eles também precisam lidar com o vírus, que é cada vez mais mortal.
+                    <div>
+                        <img src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2/o5tWAiHfxEvu2z1qkJKU4gW1uPY.jpg" alt="">
+                    </div>
+                    
+                </div>
 
-                    No final, o grupo de John encontra um lugar seguro para viver, mas eles sabem que o vírus ainda está lá fora. Eles estão determinados a encontrar uma maneira de curar o vírus e salvar o mundo.
-                </p>
+                <div id="sinopse">
+                    <section id="sinopse-filmes">
+                        <h1>Sinopse:</h1>
+                        <section class="texto-sinopse">
+                            <p>
+                                Quando o infame "Sweet Sixteen Killer" retorna 35 anos após sua primeira onda de
+                                assassinatos para fazer outra vítima, Jamie, de 17 anos, acidentalmente viaja de
+                                volta no tempo para 1987, determinada a deter o assassino.
+                            </p>
+                            <hr>
+                            <p>
+                                <span>Direção:</span> Nahnatchka Khan
+                            </p>
+                            <hr>
+                            <p>
+                                <span>Roteiristas:</span> David MatalonSasha Perl-RaverJen D'Angelo
+                            </p>
+                            <hr>
+                            <p>
+                                <span>Artistas:</span> Kiernan ShipkaOlivia HoltCharlie Gillespie
+                            </p>
+                        </section>
+                    </section>
+                </div>
+            </section>
+
+            <section class="iframe">
+                <iframe src="https://www.youtube.com/embed/mYCzbELmVy4?si=k6cUg-FWnO4aFRGU" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                <section id="button">
+                    <button type="button" class="btn-play">PLAY</button>
+                    <button type="button" class="btn-add">
+                        <img src="./imagens/add-icon.png" alt="">
+                    </button>
+                </section>
             </section>
         </section>
+    </main>        
 
-        <section id="button">
-            <button type="button" class="btn-play">PLAY</button>
-        </section>
-    </main>
+    <div class="style-footer">
+        <footer class="footer" id="footer">
+            <section class="footer-section">
+                <div class="footer-column">
+                    <nav class="nav-footer">
+                        <ul>
+                            <li><a href="./politicas/index.html#privacity">Política de Privacidade</a></li>
+                            <li><a href="./politicas/index.html#service">Termos de Serviço</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-column">
+                    <nav class="nav-footer">
+                        <ul>
+                            <li><a href="./politicas/index.html#cookies">Política de Cookies</a></li>
+                            <li><a href="./politicas/index.html#aboutUs">Sobre nós</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>     
+            <section class="footer-section2">   
+                <div class="footer-column">
+                    <nav>
+                        <ul class="logos-link">
+                            <li>
+                                <a href="https://github.com/VictorCallegari" target="_blank">
+                                    <img src="./imagens/github-logo.png" alt="github logo">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/victorcallegarir/" target="_blank">
+                                    <img src="./imagens/likedin-logo.png" alt="linkendin logo">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <img src="./imagens/pngimg.com - whatsapp_PNG95157.png" alt="whatsapp logo">
+                                </a>
+                            </li>
+                        </ul>
+                    </nav> 
+                </div>
+                <nav class="nav-footer">
+                    <ul>
+                        <li><a href="#area-logo">VOLTAR AO TOPO</a></li>
+                    </ul>
+                </nav>               
+            </section>   
+        </footer>
+        <div class="developer">
+            <span>Desenvolvido por: <strong>VICTOR CALLEGARI</strong></span>
+            <P>2023</P>
+        </div>
+    </div>        
+
+    
 </body>
 </html>
