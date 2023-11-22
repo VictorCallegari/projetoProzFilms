@@ -39,7 +39,6 @@ ul{
 /* Estilização do menu */
 .area-menu {
   width: 100vh;
-  border-radius: 30px;
   padding: 15px 0;
   background: rgba(255, 255, 255, 0.151);
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -75,7 +74,6 @@ ul{
 /*Aside */
 aside {
   position: absolute;
-  left: 0;
   background-color: #1c1c24;
   height: 100%;
   width: 20%;
@@ -120,6 +118,44 @@ aside {
 	color: #042f41;
 }
 
+/* Estilização da área de busca */
+
+.barra-pesquisa{
+  margin-left: 15px;
+  margin-bottom: 10px;
+  width: 90%;
+}
+
+.area-pesquisa{
+  display: flex;
+  background-color: #fff;
+  border-radius: 30px;
+}
+
+.imagem-pesquisa img {
+  width: 70%;
+  height: auto; 
+  display: block;
+  margin: 0 auto; 
+}
+
+.input-pesquisa{
+  border-radius: 30px;
+  border: none;
+  text-align: center;
+}
+
+#resultadoBusca{
+  font-size: 20px;
+  text-align: center;
+  background-color: #042f41;
+}
+
+#resultadoBusca a {
+	text-decoration: none;
+  color: #f1af14;
+}
+
 /* Organização da Área main */
 
 main{
@@ -135,9 +171,9 @@ main{
   
   /* Estilização dos elementos "box-film" */
 .box-film {
-	width: 150px; /* Tamanho dos elementos de acordo com o design desejado */
-	margin-right: 25px; /* Espaço à direita dos elementos para separação */
-	display: inline-block; /* Coloque os elementos em linha reta */
+	width: 150px; 
+	margin-right: 25px;
+	display: inline-block;
 	padding: 10px;
 }
 
@@ -153,13 +189,13 @@ main{
   
   /* Estilização da seção de lista de sugestões */
 #lista-sugestoes {
-	width: 95%; /* 80% da tela para a seção de lista de sugestões */
+	width: 95%; 
 	padding: 20px;
 }
 
 .carousel {
-  display: flex; /* Exibe os elementos em uma única linha horizontal */
-  overflow-x: hidden; /* Adiciona uma barra de rolagem horizontal se necessário */
+  display: flex; 
+  overflow-x: hidden;
   scroll-behavior: smooth; 
 }
 
@@ -208,6 +244,7 @@ main{
 .btn-left{
   transform: rotate(180deg);
 }
+
 
 /* Estilização do Footer */
 

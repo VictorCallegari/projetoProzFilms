@@ -6,7 +6,7 @@
     <title>ProzFilms - HOME</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> <!-- Normalize -->
-    <script src="script.js"></script>
+    
 </head>
 <body>
     <header class="area-cabecalho">
@@ -43,8 +43,25 @@
         <div class="texto-categorias">
             <h1>Categorias:</h1>
         </div>
+
+        <div class="barra-pesquisa"> <!-- Procurar por filme no menu-->
+            <form action="" class="form-pesquisa">
+                <div class="area-pesquisa">
+                    <input class="input-pesquisa" type="search" name="pesquisa" id="pesquisa" placeholder="Encontre seu Filme"
+                     autocomplete="off">
+                     <div class="imagem-pesquisa">
+                        <img src="./imagens/3d-lupa.png" alt="icone de lupa">
+                    </div>
+                </div>
+
+                <div id="resultadoBusca">
+                    <!-- Javascript-->
+                </div>
+            </form>
+        </div>
+        
         <div>
-            <nav class="area-menu2"><!-- Menu -->
+            <nav class="area-menu2"><!-- Menu lateral-->
                 <ul>
                     <li>
                         <a href="#acao">Filmes de Ação</a>
@@ -75,10 +92,10 @@
                             <h1 id="acao">Ação</h1>
                         </div>
                         <div class="title-btn">
-                            <button class="btn-arrow btn-left" onclick="clicLeftScroll()">
+                            <button class="btn-arrow btn-left" id="btnLeft">
                                 <img class="arrow-btn" src="./imagens/right-arrow-icon-27.png" alt="rigth arrow scrollbar">
                             </button>
-                            <button class="btn-arrow" onclick="clicRigthScroll()">
+                            <button class="btn-arrow" id="btnRight">
                                 <img class="arrow-btn" src="./imagens/right-arrow-icon-27.png" alt="rigth arrow scrollbar">
                             </button>
                         </div>
@@ -86,31 +103,7 @@
                     </section>
                    
                     <div class="container-filmes carousel" id="carousel">
-                        <div class="box-film" >
-                            <a href="">
-                                <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/y5sdkgO4IJMTnkjh9PG7kREPWrP.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="box-film">
-                            <a href="">
-                                <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/klGKGITBYYyTiHrph1VDSgGULOR.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="box-film">
-                            <a href="">
-                                <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qXChf7MFL36BgoLkiB3BzXiwW82.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="box-film">
-                            <a href="">
-                                <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/uldNFFKNXNvwss0MIZErMSFkBJZ.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="box-film">
-                            <a href="">
-                                <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ysRGRuG4ccFzugiKZNXcx44wSnY.jpg" alt="">
-                            </a>
-                        </div>
+                        <!-- Javascript -->
                     </div>    
                     
                 </div>
@@ -308,6 +301,6 @@
         </div>
     </div>        
 
-    
+    <script type="module" src="script.js"></script>
 </body>
 </html>

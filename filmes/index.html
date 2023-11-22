@@ -6,7 +6,6 @@
     <title>ProzFilms - HOME</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> <!-- Normalize -->
-    <script src="./script.js" defer></script>
 </head>
 <body>
     <header class="area-cabecalho">
@@ -39,56 +38,8 @@
         </div>
     </header>
 
-    <main>
-        <section class="container">
-
-            <section id="indicacao-filme">
-
-                <div class="filme-indicado" id="filme-indicado">
-
-                    <div>
-                        <img src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2/o5tWAiHfxEvu2z1qkJKU4gW1uPY.jpg" alt="">
-                    </div>
-                    
-                </div>
-
-                <div id="sinopse">
-                    <section id="sinopse-filmes">
-                        <h1>Sinopse:</h1>
-                        <section class="texto-sinopse">
-                            <p>
-                                Quando o infame "Sweet Sixteen Killer" retorna 35 anos após sua primeira onda de
-                                assassinatos para fazer outra vítima, Jamie, de 17 anos, acidentalmente viaja de
-                                volta no tempo para 1987, determinada a deter o assassino.
-                            </p>
-                            <hr>
-                            <p>
-                                <span>Direção:</span> Nahnatchka Khan
-                            </p>
-                            <hr>
-                            <p>
-                                <span>Roteiristas:</span> David MatalonSasha Perl-RaverJen D'Angelo
-                            </p>
-                            <hr>
-                            <p>
-                                <span>Artistas:</span> Kiernan ShipkaOlivia HoltCharlie Gillespie
-                            </p>
-                        </section>
-                    </section>
-                </div>
-            </section>
-
-            <section class="iframe">
-                <iframe src="https://www.youtube.com/embed/mYCzbELmVy4?si=k6cUg-FWnO4aFRGU" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-                <section id="button">
-                    <button type="button" class="btn-play">PLAY</button>
-                    <button type="button" class="btn-add">
-                        <img src="./imagens/add-icon.png" alt="">
-                    </button>
-                </section>
-            </section>
-        </section>
+    <main id="containerFilmeSelecionado">
+        
     </main>        
 
     <div class="style-footer">
@@ -146,6 +97,6 @@
         </div>
     </div>        
 
-    
+    <script type="module" src="script.js"></script>
 </body>
 </html>
