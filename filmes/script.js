@@ -1,10 +1,10 @@
+// Importa a função filmes do seu módulo filmes
 import { filmes } from "../databasefilms.js";
-
 
 // Função para obter o parâmetro "id" da URL
 function obterIdDoFilmeDaURL() {
-    const urlParams = new URLSearchParams(window.location.search);//cria um instância que busca a informação no URL presente na tela
-    return urlParams.get('id'); //retorna a busca em especifico do id após o ? capturado na instância acima
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get('id');
 }
 
 // Obtém o id do filme da URL
@@ -13,10 +13,7 @@ const idDoFilme = obterIdDoFilmeDaURL();
 // Use o id para obter as informações específicas do filme
 const filmeSelecionado = filmes.get(idDoFilme);
 
-console.log(filmeSelecionado);
-
-
-////////////////////////Adicionando informações de cada filme selecionado///////////////////////////////////
+////////////////////////Adicionando informações de cada filme selecionado////////////////////////
 
 // CAPTURANDO O ELEMENTO
 const areaInfoFilmes = document.getElementById('containerFilmeSelecionado');
@@ -59,14 +56,14 @@ sectioFilmes.innerHTML = `
             </section>
         </section>
     </div>
-    </section>
+</section>
 
-    <section class="iframe">
+<section class="iframe">
     <iframe src="${filmeSelecionado.trailer}" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
     <section id="button">
         <button type="button" class="btn-play">PLAY</button>
-        <button type="button" class="btn-add">
+        <button type="button" class="btn-add" id="btnMinhaLista">
             <img src="./imagens/add-icon.png" alt="">
         </button>
     </section>
@@ -75,17 +72,37 @@ sectioFilmes.innerHTML = `
 //ADICIONANDO O ELEMENTO AO section CRIADO
 areaInfoFilmes.appendChild(sectioFilmes);
 
+// Lista que armazenará os IDs dos filmes
+const minhaLista = [];
+
+//Função para criar lista baseada no botão minha lista
+function adicionarMinhaLista() {
+    const idDoFilme = obterIdDoFilmeDaURL();
+    const filmeSelecionado = filmes.get(idDoFilme);
+
+    if (filmeSelecionado) {
+        // Adiciona o filme à Minha Lista
+        const minhaLista = JSON.parse(localStorage.getItem('minhaLista')) || [];
+        minhaLista.push(filmeSelecionado);
+        localStorage.setItem('minhaLista', JSON.stringify(minhaLista));
+
+        console.log('Filme adicionado à Minha Lista:', filmeSelecionado);
+    } else {
+        console.log(`Filme com ID ${idDoFilme} não encontrado.`);
+    }
+}
+
+//Capturando o elemento
+const btnMinhaLista = document.getElementById('btnMinhaLista');
+
+btnMinhaLista.addEventListener('click', adicionarMinhaLista);
 
 
-/////////////////////////////Aplicar ação ao passar o mouse por cima do filme////////////////////////////////////
+///////////////////////////Aplicar ação ao passar o mouse por cima do filme////////////////////////
 
 // Capturar elementos:
 const filmeIndicado = document.getElementById('filme-indicado');
 const sinopse = document.getElementById('sinopse');
-
-// Adicionar eventos ao passar o mouse e sair do mouse
-filmeIndicado.addEventListener('mouseover', addSinopse);
-sinopse.addEventListener('mouseout', removeSinopse);
 
 // Função para mostrar as informações da sinopse
 function addSinopse() {
@@ -96,6 +113,4 @@ function addSinopse() {
 function removeSinopse() {
     sinopse.style.display = 'none';
 }
-
-
 
