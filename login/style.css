@@ -9,6 +9,8 @@ body {
   align-items: center;
   overflow: hidden; /* remove as bordas*/
   background-image: url(./images/wp2411645.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: #1a1a1a;
 }
 
@@ -58,20 +60,7 @@ p {
   color: red;
 }
 
-@media screen and (max-width: 600px) {
-  form {
-    width: 90%;
-    padding: 15px;
-  }
 
-  h3 {
-    font-size: 20px;
-  }
-
-  input {
-    height: 25px;
-  }
-}
 
 input {
   align-items: center;
@@ -81,7 +70,7 @@ input {
 }
 
 .image {
-  height: auto;
+  height: 400px;
   padding: 10px;
   background-color: #111112;
   border-radius: 5px;
@@ -129,4 +118,30 @@ input {
   background-color: #1a1a1a;
   padding-inline: 0.3rem;
   color: var(--primary);
+}
+
+/*------------------RESPONSIVIDADE-------------------*/
+
+@media screen and (max-width: 600px) {
+
+  form {
+    width: 90%;
+    padding: 15px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  input {
+    height: 50px;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  .image{
+    display: none;
+  }
 }

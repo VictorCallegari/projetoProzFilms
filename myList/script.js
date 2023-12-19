@@ -34,6 +34,31 @@ if (minhaLista.length > 0) {
 
 //Limpar local storage
 
+// ---------------- FUNÇÃO PARA O MENU HAMBURGUER --------------//
+
+document.addEventListener('DOMContentLoaded', function () {
+    const btnmenu = document.getElementById('btnmenu');
+    const areamenu = document.getElementById('areamenu');
+    const imgmenu = document.getElementById('imgmenu');
+  
+    if (btnmenu && areamenu) {
+      btnmenu.addEventListener('click', menuHamburguer);
+    }
+  
+    function menuHamburguer() {
+      if (areamenu.style.display === 'block' || areamenu.style.display === '') {
+        areamenu.style.top = '-100%';
+        areamenu.style.display = 'none';
+        imgmenu.src = './imagens/burger-menu.svg';
+      } else {
+        areamenu.style.top = '50px';
+        areamenu.style.display = 'block';
+        imgmenu.src = './imagens/x-symbol.svg';
+      }
+    }
+  });
+  
+
 
 
 

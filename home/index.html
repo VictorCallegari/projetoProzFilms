@@ -1,201 +1,247 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProzFilms - HOME</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> <!-- Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <script src="script.js"></script>
 </head>
+
 <body>
-    <header class="area-cabecalho">
-        <div>
-            <a id="area-logo" href="">
-                <img class="imagem-logo" src="./imagens/logo_transparent.png" alt="logomarca da prozFilms">
-            </a>
-        </div>        
-        <nav class="area-menu"><!-- Menu -->
-            <ul>
-                <li>
-                    <a href="../myList/index.html">MINHA LISTA</a>
-                </li>
-                <li>
-                    <a href="../category/index.html">CATEGORIA</a>
-                </li>
-                <li>
-                    <a href="#">SOBRE NÓS</a>
-                </li>
-            </ul>
-        </nav><!-- Final do Menu -->
-        
-        <div class="perfil-user">
-            <a href="../telacheckout/index.html">
-                <img src="./imagens/perfil-id.jpg" alt="perfil user">
-            </a>
-        </div>
-    </header>
+    <section class="area-principal">
+        <header class="area-cabecalho">
 
-    <main>
-        <section class="container">
+            <div class="area-logo-telacheia">
+                <a id="area-logo" href="">
+                    <img class="imagem-logo" src="./imagens/logo_transparent.png" alt="logomarca da prozFilms">
+                </a>
+            </div>
 
-            <section id="indicacao-filme">
-                <h1>SUGESTÃO DE FILME</h1>
-                <div class="filme-indicado">
-                    <a href="../filmes/index.html?id=006">
-                    <img src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2/o5tWAiHfxEvu2z1qkJKU4gW1uPY.jpg" alt="">
-                    </a>
-                </div>             
-            </section>
+            <!------------------------ Menu ------------------------------------------------------>
+            <nav class="area-menu">
+                <ul>
+                    <li>
+                        <a href="../myList/index.html">MINHA LISTA</a>
+                    </li>
+                    <li>
+                        <a href="../category/index.html">CATEGORIA</a>
+                    </li>
+                    <li>
+                        <a href="../tela_sobrenos/index.html">SOBRE NÓS</a>
+                    </li>
+                </ul>
+            </nav><!-- Final do Menu -->
 
-            <section id="lista-sugestoes">
-                <div class="blocos-filmes">
-                    <section class="header-films">
-                        <div class="title-films">
-                            <h1>Continue Assistindo</h1>
-                        </div>
-                        <div class="title-btn">
-                            <button class="btn-arrow btn-left" onclick="clicLeftScroll()">
-                                <img class="arrow-btn" src="./imagens/right-arrow-icon-27.png" alt="rigth arrow scrollbar">
-                            </button>
-                            <button class="btn-arrow" onclick="clicRigthScroll()">
-                                <img class="arrow-btn" src="./imagens/right-arrow-icon-27.png" alt="rigth arrow scrollbar">
-                            </button>
-                        </div>
+            <!-- -------------------------------MENU HAMBURGUER--------------------------- -->
 
-                    </section>
-                   
-                    <div class="container-filmes" id="carousel">
-                        <div class="box-film" >
-                            <a href="">
-                                <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/y5sdkgO4IJMTnkjh9PG7kREPWrP.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="box-film">
-                            <a href="">
-                                <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/klGKGITBYYyTiHrph1VDSgGULOR.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="box-film">
-                            <a href="">
-                                <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qXChf7MFL36BgoLkiB3BzXiwW82.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="box-film">
-                            <a href="">
-                                <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/uldNFFKNXNvwss0MIZErMSFkBJZ.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="box-film">
-                            <a href="">
-                                <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ysRGRuG4ccFzugiKZNXcx44wSnY.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>    
-                    
-                </div>
-
-                <div class="blocos-filmes">
-                    <section class="header-films">
-                        <div class="title-films">
-                            <h1>Novos episódios da sua lista</h1>
-                        </div>
-                        <div class="title-btn">
-                            <button class="btn-arrow btn-left" onclick="clicLeftScroll2()">
-                                <img class="arrow-btn" src="./imagens/right-arrow-icon-27.png" alt="rigth arrow scrollbar">
-                            </button>
-                            <button class="btn-arrow" onclick="clicRigthScroll2()">
-                                <img class="arrow-btn" src="./imagens/right-arrow-icon-27.png" alt="rigth arrow scrollbar">
-                            </button>
-                        </div>
-
-                    </section>
-                    <div class="container-filmes" id="carousel2">
-                        <div class="box-film" >
-                            <a href="">
-                                <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ukR0MkCQE6IylzBPd61txJi1L3E.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="box-film">
-                            <a href="">
-                                <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/yUSpKDhibrxnY3EXAcNkaPrUOI0.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="box-film">
-                            <a href="">
-                                <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/laCJxobHoPVaLQTKxc14Y2zV64J.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="box-film">
-                            <a href="">
-                                <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/v9WYk0nigzR9NAEjeSmfI6s4XA2.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="box-film">
-                            <a href="">
-                                <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/7NAvPYPAu7MeHwP8E9sn81PqsRh.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>    
-                </div>
-            </section>
-        </section>
-    </main>
-    <div class="style-footer">
-        <footer class="footer" id="footer">
-            <section class="footer-section">
-                <div class="footer-column">
-                    <nav class="nav-footer">
-                        <ul>
-                            <li><a href="./politicas/index.html#privacity">Política de Privacidade</a></li>
-                            <li><a href="./politicas/index.html#service">Termos de Serviço</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="footer-column">
-                    <nav class="nav-footer">
-                        <ul>
-                            <li><a href="./politicas/index.html#cookies">Política de Cookies</a></li>
-                            <li><a href="./politicas/index.html#aboutUs">Sobre nós</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </section>     
-            <section class="footer-section2">   
-                <div class="footer-column">
-                    <nav>
-                        <ul class="logos-link">
-                            <li>
-                                <a href="https://github.com/VictorCallegari" target="_blank">
-                                    <img src="./imagens/github-logo.png" alt="github logo">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/victorcallegarir/" target="_blank">
-                                    <img src="./imagens/likedin-logo.png" alt="likendin logo">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank">
-                                    <img src="./imagens/pngimg.com - whatsapp_PNG95157.png" alt="whatsapp logo">
-                                </a>
-                            </li>
-                        </ul>
-                    </nav> 
-                </div>
-                <nav class="nav-footer">
+            <nav class="area-responsividade">
+                <button class="btn-burguer-menu" id="btnmenu">
+                    <img id="imgmenu" class="img-burguer-menu" src="./imagens/burger-menu.svg" alt="">
+                </button>
+                <nav class="area-menu-burguer" id="areamenu"><!-- Menu -->
                     <ul>
-                        <li><a href="#area-logo">VOLTAR AO TOPO</a></li>
+                        <li>
+                            <a href="../myList/index.html">MINHA LISTA</a>
+                        </li>
+                        <li>
+                            <a href="../category/index.html">CATEGORIA</a>
+                        </li>
+                        <li>
+                            <a href="../tela_sobrenos/index.html">SOBRE NÓS</a>
+                        </li>
                     </ul>
-                </nav>               
-            </section>   
-        </footer>
-        <div class="developer">
-            <span>Desenvolvido por: <strong>VICTOR CALLEGARI</strong></span>
-            <P>2023</P>
-        </div>
-    </div>        
+                </nav>
 
-    
+            </nav><!-- Final do Menu Hamburguer -->
+
+            <div class="perfil-user">
+                <a href="../telacheckout/index.html">
+                    <img src="./imagens/perfil-id.jpg" alt="perfil user">
+                </a>
+            </div>
+        </header>
+
+        <main>
+            <section class="container">
+
+                <section id="indicacao-filme">
+                    <h1>SUGESTÃO DE FILME</h1>
+                    <div class="filme-indicado">
+                        <a href="../filmes/index.html?id=006">
+                            <img src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2/o5tWAiHfxEvu2z1qkJKU4gW1uPY.jpg"
+                                alt="">
+                        </a>
+                    </div>
+                </section>
+
+                <section id="lista-sugestoes">
+                    <div class="blocos-filmes">
+                        <section class="header-films">
+                            <div class="title-films">
+                                <h1>Continue Assistindo</h1>
+                            </div>
+                            <div class="title-btn">
+                                <button class="btn-arrow btn-left" onclick="clicLeftScroll()">
+                                    <img class="arrow-btn" src="./imagens/right-arrow-icon-27.png"
+                                        alt="rigth arrow scrollbar">
+                                </button>
+                                <button class="btn-arrow" onclick="clicRigthScroll()">
+                                    <img class="arrow-btn" src="./imagens/right-arrow-icon-27.png"
+                                        alt="rigth arrow scrollbar">
+                                </button>
+                            </div>
+
+                        </section>
+
+                        <div class="container-filmes" id="carousel">
+                            <div class="box-film">
+                                <a href="">
+                                    <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/y5sdkgO4IJMTnkjh9PG7kREPWrP.jpg"
+                                        alt="">
+                                </a>
+                            </div>
+                            <div class="box-film">
+                                <a href="">
+                                    <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/klGKGITBYYyTiHrph1VDSgGULOR.jpg"
+                                        alt="">
+                                </a>
+                            </div>
+                            <div class="box-film">
+                                <a href="">
+                                    <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qXChf7MFL36BgoLkiB3BzXiwW82.jpg"
+                                        alt="">
+                                </a>
+                            </div>
+                            <div class="box-film">
+                                <a href="">
+                                    <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/uldNFFKNXNvwss0MIZErMSFkBJZ.jpg"
+                                        alt="">
+                                </a>
+                            </div>
+                            <div class="box-film">
+                                <a href="">
+                                    <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ysRGRuG4ccFzugiKZNXcx44wSnY.jpg"
+                                        alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="blocos-filmes">
+                        <section class="header-films">
+                            <div class="title-films">
+                                <h1>Novos episódios da sua lista</h1>
+                            </div>
+                            <div class="title-btn">
+                                <button class="btn-arrow btn-left" onclick="clicLeftScroll2()">
+                                    <img class="arrow-btn" src="./imagens/right-arrow-icon-27.png"
+                                        alt="rigth arrow scrollbar">
+                                </button>
+                                <button class="btn-arrow" onclick="clicRigthScroll2()">
+                                    <img class="arrow-btn" src="./imagens/right-arrow-icon-27.png"
+                                        alt="rigth arrow scrollbar">
+                                </button>
+                            </div>
+
+                        </section>
+                        <div class="container-filmes" id="carousel2">
+                            <div class="box-film">
+                                <a href="">
+                                    <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ukR0MkCQE6IylzBPd61txJi1L3E.jpg"
+                                        alt="">
+                                </a>
+                            </div>
+                            <div class="box-film">
+                                <a href="">
+                                    <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/yUSpKDhibrxnY3EXAcNkaPrUOI0.jpg"
+                                        alt="">
+                                </a>
+                            </div>
+                            <div class="box-film">
+                                <a href="">
+                                    <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/laCJxobHoPVaLQTKxc14Y2zV64J.jpg"
+                                        alt="">
+                                </a>
+                            </div>
+                            <div class="box-film">
+                                <a href="">
+                                    <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/v9WYk0nigzR9NAEjeSmfI6s4XA2.jpg"
+                                        alt="">
+                                </a>
+                            </div>
+                            <div class="box-film">
+                                <a href="">
+                                    <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/7NAvPYPAu7MeHwP8E9sn81PqsRh.jpg"
+                                        alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </main>
+        <div class="style-footer">
+            <footer class="footer" id="footer">
+                <section class="footer-section">
+                    <div class="footer-column">
+                        <nav class="nav-footer">
+                            <ul>
+                                <li><a href="./politicas/index.html#privacity">Política de Privacidade</a></li>
+                                <li><a href="./politicas/index.html#service">Termos de Serviço</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer-column">
+                        <nav class="nav-footer">
+                            <ul>
+                                <li><a href="./politicas/index.html#cookies">Política de Cookies</a></li>
+                                <li><a href="./politicas/index.html#aboutUs">Sobre nós</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </section>
+                <section class="footer-section2">
+                    <div class="footer-column">
+                        <nav>
+                            <ul class="logos-link">
+                                <li>
+                                    <a href="https://github.com/VictorCallegari" target="_blank">
+                                        <img src="./imagens/github-logo.png" alt="github logo">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/victorcallegarir/" target="_blank">
+                                        <img src="./imagens/likedin-logo.png" alt="likendin logo">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <img src="./imagens/pngimg.com - whatsapp_PNG95157.png" alt="whatsapp logo">
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <nav class="nav-footer">
+                        <ul>
+                            <li><a href="#area-logo">VOLTAR AO TOPO</a></li>
+                            <li><a href="../login/index.html">SAIR</a></li>
+                        </ul>
+                    </nav>
+                </section>
+            </footer>
+            <div class="developer">
+                <span>Desenvolvido por: <a href="../tela_sobrenos/index.html">GRUPO 5</a></span>
+                <P>2023</P>
+            </div>
+        </div>
+    </section>
+
+
 </body>
+
 </html>

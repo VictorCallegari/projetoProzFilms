@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProzFilms - MINHA LISTA</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> <!-- Normalize -->
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- Normalize -->
+
 </head>
+
 <body>
     <header class="area-cabecalho">
-        <div>
+
+        <div class="area-logo-telacheia">
             <a id="area-logo" href="../home/index.html">
                 <img class="imagem-logo" src="./imagens/logo_transparent.png" alt="logomarca da prozFilms">
             </a>
-        </div>        
-        <nav class="area-menu"><!-- Menu -->
+        </div>
+
+        <!------------------------ Menu ------------------------------------------------------>
+        <nav class="area-menu">
             <ul>
                 <li>
-                    <a href="#">MINHA LISTA</a>
+                    <a href="../myList/index.html">MINHA LISTA</a>
                 </li>
                 <li>
                     <a href="../category/index.html">CATEGORIA</a>
@@ -28,18 +34,40 @@
                 </li>
             </ul>
         </nav><!-- Final do Menu -->
-        
+
+        <!-- -------------------------------MENU HAMBURGUER--------------------------- -->
+
+        <nav class="area-responsividade">
+            <button class="btn-burguer-menu" id="btnmenu">
+                <img id="imgmenu" class="img-burguer-menu" src="./imagens/burger-menu.svg" alt="">
+            </button>
+            <nav class="area-menu-burguer" id="areamenu"><!-- Menu -->
+                <ul>
+                    <li>
+                        <a href="../myList/index.html">MINHA LISTA</a>
+                    </li>
+                    <li>
+                        <a href="../category/index.html">CATEGORIA</a>
+                    </li>
+                    <li>
+                        <a href="#">SOBRE NÓS</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </nav><!-- Final do Menu Hamburguer -->
+
         <div class="perfil-user">
             <a href="../telacheckout/index.html">
                 <img src="./imagens/perfil-id.jpg" alt="perfil user">
             </a>
         </div>
-    </header>       
+    </header>
 
-    <main>      
-        
+    <main>
+
         <section class="container">
-          
+
             <section id="lista-sugestoes">
                 <div class="blocos-filmes">
 
@@ -47,11 +75,11 @@
                         <h1>Nenhum filme adicionado...</h1>
                         <img src="./imagens/astronauta.png" alt="">
                     </div>
-                   
+
                     <div class="container-filmes carousel" id="carousel">
                         <!-- Javascript -->
-                    </div>    
-                    
+                    </div>
+
                 </div>
 
             </section>
@@ -60,7 +88,7 @@
     </main>
 
 
-<!-- Inicio do Footer -->
+    <!-- Inicio do Footer -->
 
     <div class="style-footer">
         <footer class="footer" id="footer">
@@ -81,8 +109,8 @@
                         </ul>
                     </nav>
                 </div>
-            </section>     
-            <section class="footer-section2">   
+            </section>
+            <section class="footer-section2">
                 <div class="footer-column">
                     <nav>
                         <ul class="logos-link">
@@ -102,21 +130,22 @@
                                 </a>
                             </li>
                         </ul>
-                    </nav> 
+                    </nav>
                 </div>
                 <nav class="nav-footer">
                     <ul>
                         <li><a href="#area-logo">VOLTAR AO TOPO</a></li>
                     </ul>
-                </nav>               
-            </section>   
+                </nav>
+            </section>
         </footer>
         <div class="developer">
             <span>Desenvolvido por: <strong>VICTOR CALLEGARI</strong></span>
             <P>2023</P>
         </div>
-    </div>        
+    </div>
 
     <script type="module" src="script.js"></script>
 </body>
+
 </html>
