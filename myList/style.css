@@ -75,7 +75,10 @@ main {
   display: flex;
 }
 
-
+.textfilmes{
+  color: #fff;
+  padding: 10px;
+}
 
 .container {
   overflow-y: scroll;
@@ -101,6 +104,8 @@ main {
 
 /* Estilização da seção de lista de sugestões */
 #lista-sugestoes {
+  display: flex;
+  justify-content: center;
   width: 95%;
   padding: 20px;
 }

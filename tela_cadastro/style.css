@@ -1,18 +1,14 @@
-body
-{
+body {
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
-height: 100vh;
-background-size: cover;
-background-image: url(/img/background/GodBG.png)
+  height: 100vh;
+  background-size: cover;
+  background-image: url(./img/background/GodBG.png);
+}
 
-
-} 
-
-body::before 
-{
-  content: ' ';
-  background-color: rgb(0,  0, 0 .10);
+body::before {
+  content: " ";
+  background-color: rgb(0, 0, 0 0.1);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -20,36 +16,29 @@ body::before
   bottom: 0;
   left: 0;
   right: 0;
-
- 
 }
 
-.header
-{
+.header {
   padding: 20px 50px;
   position: relative;
   z-index: 10;
 }
 
-.cadastro_body
-{
+.cadastro_body {
   display: flex;
   padding: 10px;
-  margin:150px;
+  margin: 150px;
   z-index: 90;
   max-width: 450px;
   height: 500px;
   margin-left: 50%;
-  background-color: rgb( 0,0,0,0.55);
+  background-color: rgb(0, 0, 0, 0.55);
   border-radius: 10px;
   box-sizing: border-box;
   transform: translateX(-50%);
-
 }
 
-.cadastro_body h2
-{
-
+.cadastro_body h2 {
   text-align: center;
   font-size: 30px;
   color: #ffff;
@@ -58,13 +47,11 @@ body::before
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: black;
-
 }
 
-.cadastro_body input
-{
- display: flex;
- margin-left: 35px;
+.cadastro_body input {
+  display: flex;
+  margin-left: 35px;
   height: 40px;
   width: 80%;
   color: #ffff;
@@ -75,60 +62,53 @@ body::before
   outline: none;
 }
 
-.cadastro_body input:hover
-{
+.cadastro_body input:hover {
   background-color: #444;
-
 }
-.input_box
-{
-margin-bottom: 25px;
+.input_box {
+  margin-bottom: 25px;
 }
 
-.cadastro_body button
-{
+.cadastro_body button {
   margin-left: 30%;
   text-align: center;
   height: 45px;
   width: 200px;
-  color:#ffff;
+  color: #ffff;
   background-color: #242424;
   border-radius: 15px;
   font-weight: bold;
   font-size: 16px;
-  border:none;
+  border: none;
   margin-bottom: 10px;
   border: solid 1px #659eaf;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: black;
-
 }
 
-.cadastro_body button:hover
-{
-  
+.cadastro_body button:hover {
   cursor: pointer;
   transform: scale(1.05);
-  transition: .6s;
-  
+  transition: 0.6s;
 }
 
-.terms
-{
+.terms {
   margin-left: 20px;
   margin-top: 25px;
   color: #ffffffb9;
   font-size: 13px;
   text-decoration: none;
-} 
-
-.terms a
-{
-  color:#659eaf;
 }
-.terms a:hover
-{
+
+.terms a {
+  color: #659eaf;
+}
+.terms a:hover {
   text-decoration: underline;
+}
+
+#feedback-message{
+  color: red;
 }

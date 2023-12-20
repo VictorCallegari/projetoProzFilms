@@ -1,0 +1,102 @@
+--CRIAÇÃO DAS TABELAS:
+
+CREATE TABLE Clientes (
+    ClienteID SERIAL PRIMARY KEY,
+    Nome VARCHAR(90) NOT NULL,
+    Sobrenome VARCHAR(90) NOT NULL,
+    CPF CHAR(14) NOT NULL,
+    Email VARCHAR(255) NOT NULL,
+    DataNascimento DATE NOT NULL,
+    ID_MinhaLista INT,
+    ID_DadosBancarios INT
+);
+
+CREATE TABLE MinhaLista (
+    ID SERIAL PRIMARY KEY,
+    ID_Cliente INT,
+    ID_FILME INT
+);
+
+CREATE TABLE Filmes (
+    ID SERIAL PRIMARY KEY,
+    Nome VARCHAR(90) NOT NULL,
+    Imagem VARCHAR(255),
+    Sinopse TEXT,
+    Trailer VARCHAR(255),
+    Diretor_ID INT,
+    Roteirista_ID INT,
+    Genero_ID INT,
+    Artista_ID INT
+);
+
+CREATE TABLE DadosBanc (
+    ID SERIAL PRIMARY KEY,
+    NumeroCartao BIGINT NOT NULL,
+    NomeCartao VARCHAR(90) NOT NULL,
+    DataVencimento DATE NOT NULL,
+    NumeroValidacao INT NOT NULL,
+    TipoCartao VARCHAR(7) CHECK (TipoCartao IN ('debito', 'credito')) NOT NULL,
+    ID_Cliente INT
+);
+
+CREATE TABLE Genero (
+    ID SERIAL PRIMARY KEY,
+    Genero VARCHAR(90) NOT NULL
+);
+
+CREATE TABLE Diretor (
+    ID SERIAL PRIMARY KEY,
+    Nome VARCHAR(90) NOT NULL,
+    Sobrenome VARCHAR(90) NOT NULL
+);
+
+CREATE TABLE Artista (
+    ID SERIAL PRIMARY KEY,
+    Nome VARCHAR(90) NOT NULL,
+    Sobrenome VARCHAR(90) NOT NULL
+);
+
+CREATE TABLE Roteirista (
+    ID SERIAL PRIMARY KEY,
+    Nome VARCHAR(90) NOT NULL,
+    Sobrenome VARCHAR(90) NOT NULL
+);
+
+
+--ADICIONANDO AS FOREIGN KEY:
+
+ALTER TABLE Clientes
+ADD CONSTRAINT FK_MinhaLista
+FOREIGN KEY (ID_MinhaLista) REFERENCES MinhaLista(ID);
+
+ALTER TABLE Clientes
+ADD CONSTRAINT FK_DadosBancarios
+FOREIGN KEY (ID_DadosBancarios) REFERENCES DadosBanc(ID);
+
+ALTER TABLE MinhaLista
+ADD CONSTRAINT  FK_Cliente
+FOREIGN KEY (ID_Cliente) REFERENCES Clientes(ClienteID);
+
+ALTER TABLE MinhaLista
+ADD CONSTRAINT  FK_FILME
+FOREIGN KEY (ID_FILME) REFERENCES Filmes(ID);
+
+ALTER TABLE Filmes
+ADD CONSTRAINT  Diretor_FK
+FOREIGN KEY (Diretor_ID) REFERENCES Diretor(ID);
+
+ALTER TABLE Filmes
+ADD CONSTRAINT   Roteirista_FK
+FOREIGN KEY (Roteirista_ID) REFERENCES Roteirista(ID);
+
+ALTER TABLE Filmes
+ADD CONSTRAINT  Genero_FK
+FOREIGN KEY (Genero_ID) REFERENCES Genero(ID);
+
+ALTER TABLE Filmes
+ADD CONSTRAINT  Artista_FK
+FOREIGN KEY (Artista_ID) REFERENCES Artista(ID);
+
+ALTER TABLE DadosBanc
+ADD CONSTRAINT  FK_Cliente
+FOREIGN KEY (ID_Cliente) REFERENCES Clientes(ClienteID);

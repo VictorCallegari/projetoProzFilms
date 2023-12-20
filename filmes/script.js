@@ -63,7 +63,7 @@ sectioFilmes.innerHTML = `
 
     <section id="button">
         <button type="button" class="btn-play">PLAY</button>
-        <button type="button" class="btn-add" id="btnMinhaLista">
+        <button type="button" class="btn-add" id="btnMinhaLista" data-texto="Adicionar na minha lista">
             <img src="./imagens/add-icon.png" alt="">
         </button>
     </section>
@@ -86,7 +86,8 @@ function adicionarMinhaLista() {
         minhaLista.push(filmeSelecionado);
         localStorage.setItem('minhaLista', JSON.stringify(minhaLista));
 
-        console.log('Filme adicionado à Minha Lista:', filmeSelecionado);
+        alert('Filme adicionado à Minha Lista!');
+
     } else {
         console.log(`Filme com ID ${idDoFilme} não encontrado.`);
     }
@@ -103,6 +104,9 @@ btnMinhaLista.addEventListener('click', adicionarMinhaLista);
 // Capturar elementos:
 const filmeIndicado = document.getElementById('filme-indicado');
 const sinopse = document.getElementById('sinopse');
+
+filmeIndicado.addEventListener('mouseover', addSinopse);
+filmeIndicado.addEventListener('mouseout', removeSinopse);
 
 // Função para mostrar as informações da sinopse
 function addSinopse() {

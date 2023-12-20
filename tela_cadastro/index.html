@@ -1,48 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
-  <title></title>
+  <script src="script.js" defer></script>
+  <title>ProzFilms - CADASTRO</title>
 </head>
+
 <body>
-    <div class="header">
-        <div class="logo">
-            <a href="#">
-            </a>
+  <header>
+    <div class="logo">
+      <a href="#" alt="Logo da ProzFilms"></a>
+    </div>
+  </header>
+
+  <section class="cadastro_body">
+    <div class="login_box">
+      <h2>Cadastrar</h2>
+      <form action="/seu-endereco-de-cadastro" method="post">
+        <div class="input_box">
+          <input required type="email" placeholder="meu@email.com" id="email">
         </div>
-    </div>
-    
-      <div class="cadastro_body">
-          <div class="login_box">
-            <h2>Cadastrar</h2>
-            <form action="">
-            <div class="input_box">
-                 <input required type="email" placeholder="meu@email.com">
-            </div>
 
-         <div class="input_box">
-              <input required type="Nome" placeholder="Digite o nome completo">
-         </div>
+        <div class="input_box">
+          <input required type="text" placeholder="Digite o nome completo" id="nome">
+        </div>
 
-            <div class="input_box">
-                    <input required type="password" placeholder="Senha">
-            </div>
-            <div class="input_box">
-              <input type="date" name="" id="">
-            </div>
-            <div>
-              <button class="submit">
-                       Cadastrar
-              </button>
-            </div>
-            </form>
-              <div class="terms">
-                <p>Este é um projeto feito pelos alunos da turma 7 Grupo D - Proz Talento Cloud AWS - <a href="#">Saiba Mais</a></p>
-              </div>
-            </div>
-          </div>
+        <div class="input_box">
+          <input required type="password" placeholder="Senha" id="senha">
+        </div>
+        <div class="input_box">
+          <input type="date" id="date">
+        </div>
+        <div id="btncadastrar">
+          <button class="submit" id="submit">
+            Cadastrar
+          </button>
+
+          <p id="feedback-message">
+            <!-- JavaScript -->
+          </p>
+        </div>
+      </form>
+      <div class="terms">
+        <p>Este é um projeto feito pelos alunos da turma 7 Grupo D - Proz Talento Cloud AWS - <a href="#">Saiba Mais</a>
+        </p>
+      </div>
     </div>
+  </section>
 </body>
+
 </html>
