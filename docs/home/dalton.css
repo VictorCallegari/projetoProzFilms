@@ -1,23 +1,22 @@
 body {
+  font-size: large;
   margin: 0;
   padding: 0;
-  background-color: rgb(13, 33, 79);
-  background-image: url('./imagens/background-azul-escuro.jpg');
+  background-color: #f0f0f0;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-ul{
+ul {
   list-style-type: none;
 }
-
 
 /* Estilização do cabeçalho */
 
 .area-cabecalho {
   display: flex;
-  background-color: #1c1c24;
+  background-color: #3b3b4b;
   justify-content: space-between;
   align-items: center;
   height: 100px;
@@ -39,65 +38,64 @@ ul{
 
 /* Estilização do menu */
 .area-menu {
-  display: block;
-  width: 30%;
+  width: auto;
   border-radius: 30px;
   padding: 15px 0;
-  background: rgba(255, 255, 255, 0.151);
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 13.5px );
-  -webkit-backdrop-filter: blur( 13.5px );
+  background: rgba(255, 255, 255, 0.8); /* Fundo do menu mais claro */
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
   border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
-  
+
 .area-menu ul {
   display: flex;
   justify-content: center;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
-  
+
 .area-menu li {
-	display: block;
+  display: block;
 }
-  
+
 .area-menu a {
-	text-decoration: none;
-	color: #fff;
-	padding: 10px;
-	border: 1px solid #fff;
+  text-decoration: none;
+  color: #000; /* Texto do menu mais escuro */
+  padding: 10px;
+  border: 1px solid #fff;
 }
-  
+
 .area-menu a:hover {
-	background-color: #f1af14;
-	color: #042f41;
+  background-color: #f1af14;
+  color: #000;
 }
 
 /* ----------------MENU HAMBURGUER-------------------------- */
 
-.area-responsividade{
+.area-responsividade {
   display: block;
 }
 
-.btn-burguer-menu{
+.btn-burguer-menu {
   display: none;
   position: fixed;
-  top: 20px; 
+  top: 20px;
   left: 20px;
   z-index: 1000;
   cursor: pointer;
   box-shadow: #1c1c24;
 }
 
-.img-burguer-menu{
+.img-burguer-menu {
   height: 50px;
   width: auto;
 }
 
-.area-menu-burguer{
+.area-menu-burguer {
   display: none;
   position: fixed;
   top: 80px; /* Ajuste conforme necessário, levando em consideração a altura do botão */
@@ -110,129 +108,124 @@ ul{
   transition: top 0.5s ease-in-out;
 }
 
-.area-menu-burguer{
+.area-menu-burguer {
   display: none;
 }
 
 .area-menu-burguer ul {
-	list-style-type: none;
-	padding: 0;
-	text-align: center;
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
 }
 
-.area-menu-burguer li{
+.area-menu-burguer li {
   margin-top: 20px;
 }
-  
-  
-.area-menu-burguer a {
-	text-decoration: none;
-  font-size: 20px;
-	color: #fff;
-}
 
+.area-menu-burguer a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+}
 
 /* Organização da Área main */
 
-.container{
+.container {
   display: flex;
 }
 
-  
 /* Estilização da seção de sugestão de filme */
 #indicacao-filme {
-	width: 40%; /* 30% da tela para a seção de sugestão de filme */
-	max-width: 100%;
-	height: 100vh;
-	padding: 20px; /* preenchimento para espaçamento interno */
+  width: 40%; /* 40% da tela para a seção de sugestão de filme */
+  max-width: 100%;
+  height: 100vh;
+  padding: 20px; /* preenchimento para espaçamento interno */
 }
-  
+
 #indicacao-filme h1 {
-	color: #fff;
-	text-align: center;
+  color: #fff;
+  text-align: center;
 }
-  
+
 #indicacao-filme .filme-indicado img {
-	width: 100%;
-	border: 1px solid #ffff;
+  width: 100%;
+  border: 1px solid #ffff;
 }
 
 #indicacao-filme .filme-indicado img:hover {
-	scale: 1.01;
-	border: 2px solid #f8c245;
+  scale: 1.01;
+  border: 5px solid #f8c245;
 }
 
-  
-  /* Estilização dos elementos "box-film" */
+/* Estilização dos elementos "box-film" */
 .box-film {
-	width: 150px; /* Tamanho dos elementos de acordo com o design desejado */
-	height: 200px;
-	margin-right: 20px; /* Espaço à direita dos elementos para separação */
-	display: inline-block; /* Coloque os elementos em linha reta */
-	padding: 10px;
+  width: 150px; /* Tamanho dos elementos de acordo com o design desejado */
+  height: 200px;
+  margin-right: 20px; /* Espaço à direita dos elementos para separação */
+  display: inline-block; /* Coloque os elementos em linha reta */
+  padding: 10px;
 }
 
-.box-film img{
-	width: 180px;
-	border: 1px solid #ffff;
+.box-film img {
+  width: 180px;
+  border: 1px solid #ffff;
 }
 
-.box-film img:hover{
-	transform: scale(1.01);
-	border: 2px solid #f8c245;
+.box-film img:hover {
+  transform: scale(1.01);
+  border: 5px solid #f8c245;
 }
-  
-  /* Estilização da seção de lista de sugestões */
+
+/* Estilização da seção de lista de sugestões */
 #lista-sugestoes {
-	width: 60%; /* 60% da tela para a seção de lista de sugestões */
-	padding: 20px;
+  width: 60%; /* 60% da tela para a seção de lista de sugestões */
+  padding: 20px;
 }
 
 #carousel {
   display: flex; /* Exibe os elementos em uma única linha horizontal */
   overflow-x: hidden; /* Adiciona uma barra de rolagem horizontal se necessário */
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
 }
 
 #carousel2 {
   display: flex; /* Exibe os elementos em uma única linha horizontal */
   overflow-x: hidden; /* Adiciona uma barra de rolagem horizontal se necessário */
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
 }
 
-.container-filmes{
-	height: 310px;
-	overflow-x: hidden;
+.container-filmes {
+  height: 310px;
+  overflow-x: hidden;
 }
 
-  
 #lista-sugestoes h1 {
-	color: #fff;
+  color: #fff;
 }
 
 /* Estilização Scrollbar */
-.header-films{
+.header-films {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
 
-.btn-arrow{
+.btn-arrow {
   height: 40px;
   width: auto;
   background-color: transparent;
   border: none;
 }
 
-.btn-arrow:hover{
+.btn-arrow:hover {
   cursor: pointer;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.719);
-  backdrop-filter: blur( 13.5px );
-  -webkit-backdrop-filter: blur( 13.5px );
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
   border-radius: 10px;
 }
 
-.title-btn{
+.title-btn {
   display: flex;
   margin-top: 50;
 }
@@ -242,33 +235,33 @@ ul{
   height: auto;
 }
 
-.btn-left{
+.btn-left {
   transform: rotate(180deg);
 }
 
 /* Estilização do Footer */
 
-.style-footer{
-  background-color: #1c1c24;
+.style-footer {
+  background-color: #3b3b4b;
   color: #fff;
 }
 
-.nav-footer a{
+.nav-footer a {
   color: #fff;
 }
 
-.footer{
+.footer {
   display: flex;
   justify-content: space-between;
 }
 
-.footer-section{
+.footer-section {
   width: 50%;
   display: flex;
   height: 100px;
 }
 
-.footer-section2{
+.footer-section2 {
   width: 50%;
   padding-right: 15px;
   display: flex;
@@ -276,46 +269,57 @@ ul{
   height: 100px;
 }
 
-.developer{
+.developer {
   text-align: center;
   font-size: small;
 }
 
-.logos-link li{
+.logos-link li {
   margin-bottom: 5px;
+  background-color: #f0f0f0;
 }
 
-.logos-link img{
+.logos-link img {
   width: 30px;
   height: auto;
 }
 
-.logos-link img{
+.logos-link img {
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.719);
-  backdrop-filter: blur( 13.5px );
-  -webkit-backdrop-filter: blur( 13.5px );
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
   border-radius: 10px;
+}
+
+.ul-acessibility {
+  gap: 10px;
+}
+
+.img-acessibility {
+  height: 50px;
+}
+
+.btn-acessibility:hover {
+  transform: scale(2);
 }
 
 /*   -------------------RESPONSIVIDADE--------------------*/
 
 @media screen and (max-width: 700px) {
-
-  #indicacao-filme{
+  #indicacao-filme {
     display: none;
   }
 
-  .area-responsividade{
+  .area-responsividade {
     display: block;
     font-size: 10px;
-  
   }
 
-  .area-logo-telacheia{
+  .area-logo-telacheia {
     display: none;
   }
 
-  .area-menu{
+  .area-menu {
     display: none;
   }
 
@@ -324,10 +328,7 @@ ul{
     padding: 20px;
   }
 
-  .btn-burguer-menu{
+  .btn-burguer-menu {
     display: block;
   }
-
 }
-
-  

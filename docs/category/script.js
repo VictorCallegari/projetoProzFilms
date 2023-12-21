@@ -85,3 +85,5 @@ function limparAreaPesquisa() {
         resultadoBusca.style.display = 'none';
     }
 }
+
+
