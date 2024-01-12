@@ -1,11 +1,12 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #f0f0f0;
-  background-image: url('./imagens/background-azul-escuro.jpg');
+  background-color: #000000fa;
+  /* background-image: url('./imagens/background-azul-escuro.jpg'); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
 }
 
 ul{
@@ -17,62 +18,67 @@ ul{
 
 .area-cabecalho {
   display: flex;
-  background-color: #1c1c24;
+  background-color: #000000fa;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
-  padding: 0 20px;
-  border: 5px groove #f1af14;
+  height: 120px;
+  padding: 5px;
+  
+
+
 }
 
 .imagem-logo {
-  height: 40vh;
+
+  height: 30vh;
   width: auto;
 }
 
 .perfil-user img {
-  width: 80px;
+
+  width: 100px;
   height: auto;
   border-radius: 50%;
   margin-right: 35px;
 }
 
 /* Estilização do menu */
+
 .area-menu {
   width: auto;
-  border-radius: 30px;
-  padding: 15px 0;
-  background: rgba(255, 255, 255, 0.151);
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 13.5px );
-  -webkit-backdrop-filter: blur( 13.5px );
-  border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  height: auto;
+  
 }
   
 .area-menu ul {
+
   display: flex;
-  justify-content: center;
 	list-style-type: none;
-	margin: 0;
-	padding: 0;
+	padding: 15px;
 	text-align: center;
+ 
 }
   
 .area-menu li {
 	display: block;
+  margin: 10px;
 }
   
 .area-menu a {
+  
 	text-decoration: none;
 	color: #fff;
-	padding: 10px;
-	border: 1px solid #fff;
+	padding: 8px;
+  border-radius: 15px;
+
+  
 }
   
 .area-menu a:hover {
-	background-color: #f1af14;
-	color: #042f41;
+
+	background-color: #f7f6f3;
+	color: #000000b6;
+
 }
 
 /* ----------------MENU HAMBURGUER-------------------------- */
@@ -139,49 +145,66 @@ ul{
 
   
 /* Estilização da seção de sugestão de filme */
+
 #indicacao-filme {
-	width: 40%; /* 30% da tela para a seção de sugestão de filme */
+  
+	width: 30%; /* 30% da tela para a seção de sugestão de filme */
 	max-width: 100%;
 	height: 100vh;
-	padding: 20px; /* preenchimento para espaçamento interno */
+	padding: 35px; /* preenchimento para espaçamento interno */
+
 }
   
 #indicacao-filme h1 {
+
 	color: #fff;
 	text-align: center;
 }
   
 #indicacao-filme .filme-indicado img {
+  
+
 	width: 100%;
-	border: 1px solid #ffff;
+  border-radius: 10px;
+
 }
 
 #indicacao-filme .filme-indicado img:hover {
-	scale: 1.01;
-	border: 2px solid #f8c245;
+  
+  text-align: center;
+	scale: 1.08;
+	border: 1px solid #f8c245;
+
 }
 
   
   /* Estilização dos elementos "box-film" */
+
 .box-film {
+  
 	width: 150px; /* Tamanho dos elementos de acordo com o design desejado */
 	height: 200px;
-	margin-right: 20px; /* Espaço à direita dos elementos para separação */
+	margin-right: 30px; /* Espaço à direita dos elementos para separação */
 	display: inline-block; /* Coloque os elementos em linha reta */
 	padding: 10px;
+ 
 }
 
 .box-film img{
+
+  border-radius: 10px;
 	width: 180px;
-	border: 1px solid #ffff;
+	/* border: 1px solid #ffff; */
 }
 
 .box-film img:hover{
-	transform: scale(1.01);
-	border: 2px solid #f8c245;
+  justify-content: space-between;
+	transform: scale(1.06);
+	border: 1px solid #f8c245;
 }
   
   /* Estilização da seção de lista de sugestões */
+
 #lista-sugestoes {
 	width: 60%; /* 60% da tela para a seção de lista de sugestões */
 	padding: 20px;
@@ -210,46 +233,64 @@ ul{
 }
 
 /* Estilização Scrollbar */
+
 .header-films{
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  
+
 }
 
 .btn-arrow{
-  height: 40px;
-  width: auto;
+
   background-color: transparent;
   border: none;
+ 
+
 }
 
-.btn-arrow:hover{
+/* .btn-arrow:hover{
   cursor: pointer;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.719);
+  /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.719); */
   backdrop-filter: blur( 13.5px );
   -webkit-backdrop-filter: blur( 13.5px );
   border-radius: 10px;
-}
+} */
 
 .title-btn{
+
   display: flex;
   margin-top: 50;
+  border: solid rgb(199, 159, 26);
+  padding: 5px;
+
 }
 
 .arrow-btn {
-  width: 30px;
-  height: auto;
+align-items: center;
+margin-top: 5px;
+height: 50px;
+
+  
 }
 
 .btn-left{
+
+ margin-top: 25px;
   transform: rotate(180deg);
+ 
 }
 
 /* Estilização do Footer */
 
 .style-footer{
-  background-color: #1c1c24;
-  color: #fff;
+
+  background-color: #000000;
+  color: #ffff;
+  
+
+  
 }
 
 .nav-footer a{
@@ -262,17 +303,12 @@ ul{
 }
 
 .footer-section{
-  width: 50%;
+
   display: flex;
-  height: 100px;
 }
 
 .footer-section2{
-  width: 50%;
-  padding-right: 15px;
-  display: flex;
-  justify-content: flex-end;
-  height: 100px;
+padding: 10px;
 }
 
 .developer{
